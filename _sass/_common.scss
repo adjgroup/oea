@@ -1,0 +1,31 @@
+$back-color: #00d392;
+$primary-color: #00ffa2;
+$second-color: #fff;
+$basic-font: mont-heavy;
+
+@import "reset";
+
+* {
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'mont-heavy';
+    src : url('/assets/font/Mont-HeavyDEMO.otf') format('opentype');
+}
+@font-face {
+    font-family: 'mont-light';
+    src : url('/assets/font/Mont-ExtraLightDEMO.otf') format('opentype');
+}
+
+body {
+    position: fixed;
+    overflow: hidden;
+    font-family: $basic-font;
+    background-color: $back-color;
+}
+
+@import "web_top";
+@import "mainwarapper";
+@import "web_bottom_co";
+@import "web_bottom_instagram";
+@import "web_bottom_ani_logo";

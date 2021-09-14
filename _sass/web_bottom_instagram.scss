@@ -1,0 +1,23 @@
+.bottom__right {
+    position: absolute;
+    right : 35px;
+    bottom: 60px;
+}
+.web_bottom_instagram{
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    word-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50px;
+}
+.web_bottom_instagram span{
+    color: #ffffff;
+}
+.web_bottom_instagram>.line{
+    background-color: #00ffa2;
+    width: 156px;
+    height: 3px;
+    margin-bottom: 1px;
+}

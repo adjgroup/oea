@@ -1,0 +1,30 @@
+---
+layout: default
+css: assets/css/home.css
+---
+
+<div class="mainwarapper">
+    {% include web_top.html %}
+    {{ content }}
+    {% include web_bottom_co.html %}
+    <div class="bottom__right">
+        {% include web_bottom_ani_logo.html %}
+        {% include web_bottom_instagram.html %}
+    </div>
+
+    <!-- mobile -->
+    <img class="mobile__menu" src="assets/imgs/mobile_menu.png">
+    <img class="mobile__logo" src="assets/imgs/mobile_logo.png">
+
+    <div class="mobile__menu_page">
+        <img class="moblie__menu_close_icon" src="assets/imgs/close.png">
+        <div class="moblie__menu_link">
+            <div class="works">WORKS</div>
+            <div class="shop">SHOP</div>
+            <div class="about">ABOUT</div>
+        </div>
+        {% include web_bottom_instagram.html %}
+    </div>
+</div>
+
+
