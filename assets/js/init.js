@@ -9,9 +9,9 @@ window.onload = ()=>{
     linkAbout = document.querySelector(".web__button_bar>.about");
     colseBtn = document.querySelector(".close__icon");
 
-    if(linkWorks != undefined) linkWorks.addEventListener("click", ()=>{ location.href="/" });
-    // if(linkShop != undefined) linkShop.addEventListener("click", ()=>{ location.href="" });
-    if(linkAbout != undefined) linkAbout.addEventListener("click", ()=>{ location.href="about" });
+    // if(linkWorks != undefined) linkWorks.addEventListener("click", ()=>{ location.href="/" });
+    // // if(linkShop != undefined) linkShop.addEventListener("click", ()=>{ location.href="" });
+    // if(linkAbout != undefined) linkAbout.addEventListener("click", ()=>{ location.href="about" });
     if(colseBtn != undefined) colseBtn.addEventListener("click", ()=>{ location.href="/" });
 
     init();

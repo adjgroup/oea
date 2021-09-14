@@ -1,0 +1,25 @@
+@import "reset.css";
+@import "web_top.css";
+@import "mainwarapper.css";
+@import "web_bottom_co.css";
+@import "web_bottom_instagram.css";
+@import "web_bottom_ani_logo.css";
+
+* {
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'mont-heavy';
+    src : url('/assets/font/Mont-HeavyDEMO.otf') format('opentype');
+}
+@font-face {
+    font-family: 'mont-light';
+    src : url('/assets/font/Mont-ExtraLightDEMO.otf') format('opentype');
+}
+
+body {
+    position: fixed;
+    overflow: hidden;
+    font-family: mont-heavy;
+    background-color:#e5e5e5;
+}

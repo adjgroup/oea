@@ -1,8 +1,10 @@
 ---
 layout: page
 title: page
+css: page
 ---
 <div class="main__frame">
+    <img class="main__item_title" src="assets/imgs/list/phantom_black.png">
     <div class="main__img_set">
         <img src="assets/imgs/items/instrap.png">
         <img src="assets/imgs/items/instrap.png">
@@ -15,4 +17,3 @@ title: page
         </div>
     </div>
 </div>
-<img class="main__item_title" src="assets/imgs/list/phantom_black.png">

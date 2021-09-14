@@ -18,11 +18,11 @@ let blockFlag;          // 스크롤 중복 실행 방지 Flag.
 let contentImgScreen;   // 스
 
 // 들어갈 목록 (글자이미지의 png 이름)
-let listData = [
-    "instrap",
-    "arktic_white",
-    "phantom_black"
-];
+// let listData = [
+//     "instrap",
+//     "arktic_white",
+//     "phantom_black"
+// ];
 
 let itemHeight;     // list 한개의 높이
 let itemWidth;      // list 한개의 길이
@@ -100,7 +100,7 @@ function appendList(){
     if( innerSize-scrollSize-outerSize < 100 ){
         let list = document.createElement("div");
         list.innerHTML=`
-            <img src="assets/imgs/list/${listData[nextBottomIndex]}.png" value="${nextBottomIndex}">
+            <img src="/oea/list/${listData[nextBottomIndex]}.png" value="${nextBottomIndex}">
         `;
         contentInner.appendChild(list);
         nextBottomIndex++;
@@ -116,7 +116,7 @@ function prepandList(){
     if( scrollSize < 100 ){
         let list = document.createElement("div");
         list.innerHTML=`
-            <img src="assets/imgs/list/${listData[nextTopIndex]}.png" value="${nextTopIndex}">
+            <img src="/oea/list/${listData[nextTopIndex]}.png" value="${nextTopIndex}">
         `;
         nextTopIndex--;
         if(nextTopIndex==-1) nextTopIndex = listData.length-1;
@@ -160,9 +160,10 @@ function changeImg(index){
     
     // 새로운 이미지 생성
     let newImg = document.createElement("a");
-    newImg.href="/page";
+    // newImg.href="/page";
+    newImg.href= items[listData[index]];
     newImg.innerHTML=`
-        <img src="assets/imgs/items/${listData[index]}.png">
+        <img src="/oea/thumbnail/${listData[index]}.png">
     `;
     if(preIndex < currentIndex){
         newImg.style.left = `${itemWidth}px`;
@@ -218,7 +219,7 @@ function init(){
         for(let i=0; i < listData.length; i++){
             let list = document.createElement("div");
             list.innerHTML=`
-                <img src="assets/imgs/list/${listData[i]}.png" value="${i}">
+                <img src="/oea/list/${listData[i]}.png" value="${i}">
             `;
             contentInner.appendChild(list);
             currentSize += listSize;
@@ -276,6 +277,7 @@ function init(){
     });
 
     window.addEventListener("resize", resizeMoniter);
+    window.addEventListener("orientationchange", resizeMoniter);
     contentOuter.addEventListener("scroll", scrollOverload);
 }
 

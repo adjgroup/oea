@@ -1,6 +1,7 @@
 ---
 layout: about
 title: about
+css: about
 ---
 
 <div class="main__frame">

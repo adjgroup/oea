@@ -1,0 +1,43 @@
+.bottom__right .web_bottom_ani_logo{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 96px;
+    height: 96px;
+    margin-bottom: 40px;
+}
+.bottom__right .web_bottom_ani_logo img{
+    position: absolute;
+}
+@keyframes round{
+    from{
+      transform: none;
+    }
+    to {
+      transform: rotate(1turn);
+    }
+}
+
+.bottom__right .bottom__circle_ani{
+    width: 95px;
+    animation: round 6s linear infinite;
+}
+.bottom__right .bottom__char{
+    height: 18px;
+}
+.bottom__right .bottom__char_o{
+    left: 18px;
+}
+.bottom__right .bottom__char_e{
+    left: 39px;
+}
+.bottom__right .bottom__char_a{
+    left: 60px;
+}
+
+@media screen and (max-width:900px){
+    .bottom__right .web_bottom_ani_logo{
+        display: none;
+    }
+}

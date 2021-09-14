@@ -1,0 +1,48 @@
+.web__logo{
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    display: flex;
+    width: 84px;
+    z-index: 3;
+}
+.web__button_bar{
+    position: absolute;
+    display: flex;
+    top: 40px;
+    right: 35px;
+    color: #cbcbcb;
+    font-size: 13px;
+    justify-content: space-between;
+    width : 250px;
+    z-index: 3;
+}
+.web__button_bar>.selected{
+    color: #00ffa2;
+}
+.web__button_bar>div{
+    text-align: center;
+}
+.web__button_bar>div:nth-child(1){
+    width: 100px;
+}
+.web__button_bar>div:nth-child(2){
+    width: 70px;
+}
+.web__button_bar>div:nth-child(3){
+    width: 60px;
+}
+
+.web__button_bar>div>a{
+    color:inherit;
+    text-decoration: none;
+}
+.web__button_bar>div:hover{
+    font-size: 15px;
+}
+
+@media screen and (max-width:900px){
+    .web__button_bar{
+        display: none;
+    }
+}

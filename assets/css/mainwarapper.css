@@ -1,0 +1,14 @@
+body>.mainwarapper{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    color: #cbcbcb;
+    justify-content: center;
+    align-items: center;
+}

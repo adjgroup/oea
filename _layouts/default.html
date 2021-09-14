@@ -4,11 +4,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>oea | Oh, yeah! </title>
-        <link rel="stylesheet" href="{{ 'assets/css/' | relative_url }}{{page.title}}.css" />
+        <link rel="stylesheet" href="{{ '/assets/css/' | relative_url }}{{page.css}}.css" />
     </head>
     <body>        
         {{ content }}
     </body> 
-    <script src="{{ 'assets/js/init.js' | relative_url }}"></script>
-    <script src="{{ 'assets/js/' | relative_url }}{{ page.title }}.js"></script>
+    <script src="{{ '/assets/js/init.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/' | relative_url }}{{page.css}}.js"></script>
 </html>
