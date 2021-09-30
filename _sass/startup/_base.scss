@@ -1,0 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    background-color: $background-color;
+    width: 100vw;
+    height: 100vh;
+    color: $dark-color;
+}

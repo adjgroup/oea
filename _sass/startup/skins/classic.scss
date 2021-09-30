@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'mont-heavy';
+    src : url('/assets/font/Mont-HeavyDEMO.otf') format('opentype');
+}
+@font-face {
+    font-family: 'mont-light';
+    src : url('/assets/font/Mont-ExtraLightDEMO.otf') format('opentype');
+}
+
+$point-color:            #00FFA2 !default;
+$light-color:            #FFFFFF !default;
+$base-color:             #CCCCCC !default;
+$dark-color:             #0000004D !default;
+
+$background-color:       #E5E5E5 !default;
+
+$header-font: mont-heavy;

@@ -1,0 +1,22 @@
+@font-face { font-family: 'mont-heavy'; src: url("/assets/font/Mont-HeavyDEMO.otf") format("opentype"); }
+
+@font-face { font-family: 'mont-light'; src: url("/assets/font/Mont-ExtraLightDEMO.otf") format("opentype"); }
+
+* { box-sizing: border-box; }
+
+body { position: relative; background-color: #E5E5E5; width: 100vw; height: 100vh; color: #0000004D; }
+
+@keyframes round { from { transform: none; }
+  to { transform: rotate(1turn); } }
+
+.circular_rotation_logo { position: relative; display: flex; justify-content: center; align-items: center; width: 223px; height: 223px; margin: 20px; }
+
+.circular_rotation_logo .core { position: absolute; width: 129px; }
+
+.circular_rotation_logo .ling { position: absolute; width: 223px; animation: round 6s linear infinite; }
+
+.coming_soon { font-family: mont-heavy; font-size: x-large; }
+
+body { padding-top: 100px; display: flex; flex-direction: column; align-items: center; }
+
+/*# sourceMappingURL=lookbook.css.map */
