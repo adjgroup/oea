@@ -3,20 +3,12 @@
 	"file": "lookbook.css",
 	"sources": [
 		"lookbook.scss",
-		"_sass/startup/skins/classic.scss",
-		"_sass/startup/lookbook_layout.scss",
-		"_sass/startup/_base.scss",
-		"_sass/startup/modules/_circular_rotation_logo_basic.scss",
-		"_sass/startup/modules/_coming_soon.scss"
+		"_sass/startup/lookbook_layout.scss"
 	],
 	"sourcesContent": [
-		"@import\n  \"startup/skins/classic\",\n  \"startup/lookbook_layout\";\n",
-		"@charset \"utf-8\";\r\n\r\n@font-face {\r\n    font-family: 'mont-heavy';\r\n    src : url('/assets/font/Mont-HeavyDEMO.otf') format('opentype');\r\n}\r\n@font-face {\r\n    font-family: 'mont-light';\r\n    src : url('/assets/font/Mont-ExtraLightDEMO.otf') format('opentype');\r\n}\r\n\r\n$point-color:            #00FFA2 !default;\r\n$light-color:            #FFFFFF !default;\r\n$base-color:             #CCCCCC !default;\r\n$dark-color:             #0000004D !default;\r\n\r\n$background-color:       #E5E5E5 !default;\r\n\r\n$header-font: mont-heavy;\r\n",
-		"@import\r\n  \"startup/base\",             // Defines element resets.\r\n  \"startup/modules/circular_rotation_logo_basic\",  // 원형 회전 로고\r\n  \"startup/modules/coming_soon\"  // 커밍순\r\n;\r\n\r\nbody{\r\n  padding-top: 100px;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n}",
-		"* {\r\n    box-sizing: border-box;\r\n}\r\nbody {\r\n    position: relative;\r\n    background-color: $background-color;\r\n    width: 100vw;\r\n    height: 100vh;\r\n    color: $dark-color;\r\n}",
-		"@keyframes round{\r\n    from{\r\n      transform: none;\r\n    }\r\n    to {\r\n      transform: rotate(1turn);\r\n    }\r\n}\r\n\r\n.circular_rotation_logo {\r\n    position: relative;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    width: 223px;\r\n    height: 223px;\r\n    .core {\r\n        position: absolute;\r\n        width: 129px;\r\n    }\r\n    .ling {\r\n        position: absolute;\r\n        width: 223px;\r\n        animation: round 6s linear infinite;\r\n    }\r\n    margin: 20px;\r\n}\r\n\r\n",
-		".coming_soon{\r\n    font-family: $header-font;\r\n    font-size: x-large;\r\n}"
+		"@import\n  \"startup/lookbook_layout\";\n",
+		".lookbook{\r\n  background-color: aqua;\r\n}"
 	],
 	"names": [],
-	"mappings": "ACEA,UAAU,GACN,WAAW,EAAE,YAAY,EACzB,GAAG,EAAG,sCAAsC,CAAC,kBAAkB;;AAEnE,UAAU,GACN,WAAW,EAAE,YAAY,EACzB,GAAG,EAAG,2CAA2C,CAAC,kBAAkB;;AERxE,AAAA,CAAC,CAAC,EACE,UAAU,EAAE,UAAU,GACzB;;AACD,AAAA,IAAI,CAAC,EACD,QAAQ,EAAE,QAAQ,EAClB,gBAAgB,EFWK,OAAO,EEV5B,KAAK,EAAE,KAAK,EACZ,MAAM,EAAE,KAAK,EACb,KAAK,EFMgB,SAAS,GELjC;;ACTD,UAAU,CAAV,KAAU,GACN,IAAI,GACF,SAAS,EAAE,IAAI;EAEjB,EAAE,GACA,SAAS,EAAE,aAAa;;AAI9B,AAAA,uBAAuB,CAAC,EACpB,QAAQ,EAAE,QAAQ,EAClB,OAAO,EAAE,IAAI,EACb,eAAe,EAAE,MAAM,EACvB,WAAW,EAAE,MAAM,EACnB,KAAK,EAAE,KAAK,EACZ,MAAM,EAAE,KAAK,EAUb,MAAM,EAAE,IAAI,GACf;;AAjBD,AAOI,uBAPmB,CAOnB,KAAK,CAAC,EACF,QAAQ,EAAE,QAAQ,EAClB,KAAK,EAAE,KAAK,GACf;;AAVL,AAWI,uBAXmB,CAWnB,KAAK,CAAC,EACF,QAAQ,EAAE,QAAQ,EAClB,KAAK,EAAE,KAAK,EACZ,SAAS,EAAE,wBAAwB,GACtC;;ACxBL,AAAA,YAAY,CAAA,EACR,WAAW,EJiBD,UAAU,EIhBpB,SAAS,EAAE,OAAO,GACrB;;AHGD,AAAA,IAAI,CAAA,EACF,WAAW,EAAE,KAAK,EAClB,OAAO,EAAE,IAAI,EACb,cAAc,EAAE,MAAM,EACtB,WAAW,EAAE,MAAM,GACpB"
+	"mappings": "ACAA,AAAA,SAAS,CAAA,EACP,gBAAgB,EAAE,IAAI,GACvB"
 }

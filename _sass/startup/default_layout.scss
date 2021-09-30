@@ -1,0 +1,26 @@
+@import
+  "startup/base"             // Defines element resets.
+;
+
+body.default{
+  display: flex;
+  justify-content: space-between;
+  .left_section{
+    width: 33%;
+    height: 100vh;
+    background-image: url('/assets/images/background_side_y.png');
+    background-size: cover;
+    background-position: right;
+  }
+  .center_section{
+    width: 34% ;
+    height: 100vh;
+
+  }
+  .right_section{
+    width: 33%;
+    background-image: url('/assets/images/background_side_y.png');
+    background-size: cover;
+    height: 100vh;
+  }
+}

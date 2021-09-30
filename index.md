@@ -1,7 +1,4 @@
 ---
-layout: lookbook
+layout: ready
 ---
 
-<div class="coming_soon">
-    "We're getting ready."
-<div>
