@@ -3,5 +3,4 @@
 ---
 
 @import
-  "startup/skins/{{ site.startup.skin | default: 'classic' }}",
   "startup/lookbook_layout";
