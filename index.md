@@ -3,5 +3,5 @@ layout: lookbook
 ---
 
 <div class="coming_soon">
-    Coming Soon ...
+    "We're getting ready."
 <div>
