@@ -1,26 +1,34 @@
 @import
-  "startup/base"             // Defines element resets.
+  "startup/base",             // Defines element resets.
+  "startup/modules/wide_basic_logo",
+  "startup/modules/wide_copy",
+  "startup/modules/wide_nav",
+  "startup/modules/wide_sns_link"
 ;
 
 body.default{
   display: flex;
   justify-content: space-between;
+  min-height: fit-content;
+
   .left_section{
     width: 33%;
-    height: 100vh;
-    background-image: url('/assets/images/background_side_y.png');
+    background-image: url('/assets/images/background_side_y_l.png');
     background-size: cover;
     background-position: right;
+    position: relative;
+    flex-grow: 3;
   }
   .center_section{
     width: 34% ;
-    height: 100vh;
-
+    min-width: 560px;
+    min-height: 100vh;
   }
   .right_section{
     width: 33%;
-    background-image: url('/assets/images/background_side_y.png');
+    min-width: 440px;
+    background-image: url('/assets/images/background_side_y_r.png');
     background-size: cover;
-    height: 100vh;
+    position: relative;
   }
 }

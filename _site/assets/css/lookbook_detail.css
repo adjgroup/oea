@@ -1,0 +1,83 @@
+@font-face { font-family: 'mont-heavy'; src: url("/assets/font/Mont-HeavyDEMO.otf") format("opentype"); }
+
+@font-face { font-family: 'mont-light'; src: url("/assets/font/Mont-ExtraLightDEMO.otf") format("opentype"); }
+
+@font-face { font-family: 'open-sans-bold'; src: url("/assets/font/OpenSans-Bold.ttf"); }
+
+@font-face { font-family: 'noto-sans-cjk-kr'; src: url("/assets/font/NotoSansCJKkr-Bold.otf"); }
+
+/* wide: computer mode  */
+* { box-sizing: border-box; }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+body { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+body { position: relative; background-color: #E5E5E5; color: #0000004D; }
+
+a { text-decoration: none; color: inherit; }
+
+.wide_basic_logo { color: #00FFA2; font-size: 50px; font-family: mont-heavy; position: absolute; top: 40px; left: 55px; }
+
+.wide_copy { position: absolute; color: #CCCCCC; font-size: 12px; font-family: open-sans-bold; bottom: 50px; left: 55px; line-height: 150%; }
+
+.wide_nav { color: #CCCCCC; font-family: mont-heavy; font-size: 15px; position: absolute; top: 40px; right: 55px; display: flex; justify-content: space-between; width: 70%; }
+
+.wide_nav .icon.selected { color: #00FFA2; }
+
+.wide_sns_link { position: absolute; bottom: 50px; right: 55px; display: flex; justify-content: space-between; width: 180px; }
+
+.wide_sns_link .icon { height: 18px; }
+
+body.lookbook_detail { position: relative; display: flex; flex-direction: column; justify-content: center; height: 100vh; }
+
+body.lookbook_detail .top_section { position: absolute; display: flex; flex-direction: column; width: 100vw; top: 0px; background-image: url("/assets/images/background_top.png"); background-size: cover; background-position: bottom; width: 100%; height: 30vh; }
+
+body.lookbook_detail .top_section div { position: relative; display: flex; justify-content: space-between; }
+
+body.lookbook_detail .top_section .wide_nav { max-width: 450px; }
+
+body.lookbook_detail .top_section .page_icon_section { width: 100vw; position: absolute; display: flex; justify-content: center; align-items: flex-end; z-index: 25; bottom: 100px; }
+
+body.lookbook_detail .top_section .page_icon_section .buy_icon { width: 81px; }
+
+body.lookbook_detail .top_section .page_icon_section .close_icon { width: 48px; position: absolute; right: 60px; }
+
+body.lookbook_detail .center_section { position: relative; height: 55vh; overflow-x: scroll; overflow-y: hidden; width: 100vw; z-index: 20; display: flex; }
+
+body.lookbook_detail .center_section .item_images { position: absolute; width: fit-content; height: 100%; display: flex; left: 0px; }
+
+body.lookbook_detail .center_section .item_images img { margin: 0px 40px; }
+
+body.lookbook_detail .center_section .item_images img:nth-child(1) { height: 49vh; margin-top: 3vh; }
+
+body.lookbook_detail .center_section .item_images img:nth-child(2) { height: 30vh; margin-top: 3vh; }
+
+body.lookbook_detail .center_section .item_images img:nth-child(3) { height: 30vh; margin-top: 15vh; z-index: 21; }
+
+body.lookbook_detail .center_section .item_images img:nth-child(4) { height: 45vh; margin-top: 6vh; }
+
+body.lookbook_detail .center_section .item_images img:nth-child(5) { height: 40vh; margin-top: 1vh; z-index: 21; }
+
+body.lookbook_detail .center_section .item_images img:nth-child(6) { height: 28vh; margin-top: 10vh; }
+
+body.lookbook_detail .center_section .item_images img:nth-child(7) { height: 45vh; margin-top: 5vh; }
+
+body.lookbook_detail .center_section .item_name { position: fixed; align-self: center; text-align: center; color: #00FFA2; font-family: mont-heavy; font-size: 70px; z-index: 20; width: 100vw; }
+
+body.lookbook_detail .center_section::-webkit-scrollbar { display: none; }
+
+body.lookbook_detail .bottom_section { position: absolute; bottom: 0px; background-image: url("/assets/images/background_bottom.png"); background-size: cover; background-position: top; width: 100%; height: 30vh; }
+
+/*# sourceMappingURL=lookbook_detail.css.map */

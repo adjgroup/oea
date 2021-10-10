@@ -1,0 +1,14 @@
+.wide_nav{
+    color: $base-color;
+    font-family: $header-font;
+    font-size: 15px;
+    position: absolute;
+    top: $wide-top;
+    right: $wide-right;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    .icon.selected{
+        color: $point-color;
+    }
+}
