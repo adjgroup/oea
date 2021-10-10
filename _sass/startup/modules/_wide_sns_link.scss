@@ -1,0 +1,12 @@
+.wide_sns_link{
+    position: absolute;
+    bottom: $wide-bottom;
+    right: $wide-right;
+    display: flex;
+    justify-content: space-between;
+    width: 180px;
+
+    .icon{
+        height: 18px;
+    }
+}

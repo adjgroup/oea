@@ -1,0 +1,13 @@
+- number: '01'
+  name: 'INSTRAP STORY'
+  img: sample.png
+  link: /aaa
+- number: '02'
+  name: 'ARKTIC WHITE'
+  img: sample.png
+  link: /bbb
+- number: '03'
+  name: 'PHANTOM BLACK'
+  img: sample.png
+  link: /ccc
+  

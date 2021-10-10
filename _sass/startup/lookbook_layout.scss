@@ -1,3 +1,106 @@
-.lookbook{
-  background-color: aqua;
+.center_section{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+  hr{
+    position: absolute;
+    color: $point-color;
+    border: solid 1px;
+    width: 153px;
+    scroll-snap-align: center;
+    margin-bottom: 5vh;
+  }
+  hr.left_line{
+    left: -175px;
+    z-index: 50;
+  }
+  hr.right_line{
+    right: -175px;
+    z-index: 50;
+  }
+  
+  .main_images{
+    position: absolute;
+    background-color: maroon;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+    margin-bottom: 30px;
+    
+    div{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    img{
+      width: 120%;
+    }
+  }
 }
+.lookbook_contents::-webkit-scrollbar{
+  display: none;
+}
+.lookbook_contents{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow-y: hidden;
+  scroll-snap-type: y mandatory;
+  scroll-padding-bottom: 5vh;
+  
+  .item_list::-webkit-scrollbar{
+    display: none;
+  }
+
+  .item_list{
+    width: 100%;
+    height: fit-content;
+    .item{
+      width: 100%;
+      display: flex;
+      color: $light-color;
+      font-family: $header-font;
+      margin: 5px 0px;
+      .number{
+        z-index:19;
+        padding: 6px 6px 0px 0px ;
+        font-size: 10px;
+      }
+      .name{
+        z-index:19;
+        font-size: 70px;
+      }
+      
+      @media screen and (max-width: 1900px) {
+        .name{
+          font-size: 65px;
+        };
+      }
+      @media screen and (max-width: 1750px){
+        .name{
+          font-size: 60px;
+        };
+      }
+      
+    }
+    .item.active{
+      scroll-snap-align: center;
+      .number{
+        z-index: 21;
+      }
+      .name{
+        z-index: 21;
+      }
+    }
+  }
+}
+
+
