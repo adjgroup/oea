@@ -7,4 +7,7 @@
     left: $wide-left;
     line-height: 150%;
     z-index: 55;
+    @media screen and (max-width: $middle-width) {
+        display: none;
+    }
 }

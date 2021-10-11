@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  overflow-x: visible;
   
   hr{
     position: absolute;
@@ -12,6 +13,9 @@
     width: 153px;
     scroll-snap-align: center;
     margin-bottom: 5vh;
+    @media screen and (max-width: $middle-width) {
+      display: none;
+    }
   }
   hr.left_line{
     left: -175px;
@@ -24,7 +28,6 @@
   
   .main_images{
     position: absolute;
-    background-color: maroon;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -40,6 +43,9 @@
     }
     img{
       width: 120%;
+      @media screen and (max-width: $middle-width) {
+        width: 130%;
+      }
     }
   }
 }
@@ -55,7 +61,8 @@
   overflow-y: hidden;
   scroll-snap-type: y mandatory;
   scroll-padding-bottom: 5vh;
-  
+
+
   .item_list::-webkit-scrollbar{
     display: none;
   }
@@ -63,16 +70,21 @@
   .item_list{
     width: 100%;
     height: fit-content;
+
     .item{
       width: 100%;
       display: flex;
       color: $light-color;
       font-family: $header-font;
       margin: 5px 0px;
+
       .number{
         z-index:19;
         padding: 6px 6px 0px 0px ;
         font-size: 10px;
+        @media screen and (max-width: $middle-width) {
+          padding-top: 3px;
+        }
       }
       .name{
         z-index:19;
@@ -98,8 +110,32 @@
         @media screen and (max-width: 1400px) {
           font-size: 48px;
         }
-      }      
+        @media screen and (max-width: $middle-width) {
+          font-size: 52px;
+        }
+        @media screen and (max-width: ($narrow-width + (50px))) {
+          font-size: 48px;
+        }
+        @media screen and (max-width: $narrow-width) {
+          font-size: 41px;
+        }
+        @media screen and (max-width: ($narrow-width - (25px))) {
+          font-size: 3.5vmax;
+        }
+        @media screen and (max-width: ($narrow-width - (125px))) {
+          font-size: 3.2vmax;
+        }
+        @media screen and (max-width: ($narrow-width - (160px))) {
+          font-size: 3.0vmax;
+        }
+        @media screen and (max-width: ($narrow-width - (190px))) {
+          font-size: 2.7vmax;
+        }
+      }
     }
+    // .item:nth-child(20){
+    //   background-color: maroon;
+    // }
     .item.active{
       scroll-snap-align: center;
       .number{

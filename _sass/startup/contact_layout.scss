@@ -5,15 +5,20 @@
 .center_section{
   display: flex;
   justify-content: center;
-  align-items: center;
+  height: 100vh;
+  overflow-y: auto;
 }
-
+.center_section::-webkit-scrollbar{
+  display: none;
+}
 .contact_contents{
   width: fit-content;
+  height: fit-content;
   color: $base-color;
   line-height: 180%;
   position: relative;
-  padding: 50px 80px;
+  padding: 150px 80px 50px 80px;
+  margin-bottom: 100px;
   .label{
     font-size: 20px;
     font-family: $sub-font;

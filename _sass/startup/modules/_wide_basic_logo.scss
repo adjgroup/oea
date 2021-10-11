@@ -6,4 +6,7 @@
     top: $wide-top - 13px;
     left: $wide-left;
     z-index: 55;
+    @media screen and (max-width: $middle-width) {
+        display: none;
+    }
 }
