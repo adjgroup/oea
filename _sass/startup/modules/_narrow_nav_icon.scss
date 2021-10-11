@@ -1,4 +1,4 @@
-.narrow-nav-icon{
+.narrow_nav_icon{
     position: fixed;
     background-color: $point-color;
     bottom: $narrow-bottom;
@@ -10,8 +10,16 @@
     border-radius: 45px;
     z-index: 55;
     color: $light-color;
-    display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 4px 4px 4px 4px rgba(0,0,0, 0.1);
+    display: none;
+
+    @media screen and (max-width: $middle-width) {
+        display: flex;
+    }
+}
+
+.narrow_nav_icon:hover{
+    cursor: pointer;
 }

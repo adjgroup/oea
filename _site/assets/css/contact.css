@@ -18,6 +18,8 @@
 
 .circular_rotation_logo .ling { position: absolute; width: 223px; animation: round 6s linear infinite; }
 
+@media screen and (max-width: 900px) { body.default { background-image: url("/assets/images/contact_body_background.png"); background-size: cover; background-position: top; } body.default .left_section, body.default .right_section { display: none; } body.default .center_section { min-width: 100vw; width: 100vw; } body.default .center_section .contact_contents { bottom: 0px; padding: 250px 50px 50px 50px; } body.default .center_section .contact_contents .circular_rotation_logo { display: none; } body.default .center_section .contact_contents .label { margin-bottom: 10px; } }
+
 .center_section { display: flex; justify-content: center; height: 100vh; overflow-y: auto; }
 
 .center_section::-webkit-scrollbar { display: none; }

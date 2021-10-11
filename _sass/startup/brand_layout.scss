@@ -1,5 +1,7 @@
 @import
-  "startup/modules/circular_rotation_logo_basic"           // 원형 회전 로고
+  "startup/modules/circular_rotation_logo_basic",           // 원형 회전 로고
+  "startup/modules/brand_body"
+
 ;
 
 .center_section{
@@ -66,5 +68,9 @@
     color:  $point-color;
     font-family: $sub-font;
     margin-bottom: 40px;
+    .arrow{
+      width: 18px;
+      margin: 0px 1px;
+    }
   }
 }

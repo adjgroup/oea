@@ -319,6 +319,7 @@ function init(){
 
 window.onload = ()=>{
     init();
+    initMoblieNav();
 }
 
 
