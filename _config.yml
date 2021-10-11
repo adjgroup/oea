@@ -4,7 +4,7 @@ startup:
 oea:
   shop: shop.oea # 공식 판매처 주소
   sns:
-    instagram: instagram # oea 인스타 계정 연결
+    instagram: oea.world # oea 인스타 계정 연결
     facebook: # oea facebook 계정
     naver: # oea naver blog
     pinterest: # oea pinterest

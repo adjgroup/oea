@@ -14,7 +14,7 @@
     scroll-snap-align: center;
     margin-bottom: 5vh;
     @media screen and (max-width: $middle-width) {
-      display: none;
+      opacity: 0;
     }
   }
   hr.left_line{
@@ -120,22 +120,28 @@
           font-size: 41px;
         }
         @media screen and (max-width: ($narrow-width - (25px))) {
-          font-size: 3.5vmax;
+          font-size: 38px;
         }
-        @media screen and (max-width: ($narrow-width - (125px))) {
-          font-size: 3.2vmax;
+        @media screen and (max-width: ($narrow-width - (105px))) {
+          font-size: 36px;
         }
-        @media screen and (max-width: ($narrow-width - (160px))) {
-          font-size: 3.0vmax;
+        @media screen and (max-width: ($narrow-width - (115px))) {
+          font-size: 34px;
         }
-        @media screen and (max-width: ($narrow-width - (190px))) {
-          font-size: 2.7vmax;
+        @media screen and (max-width: ($narrow-width - (165px))) {
+          font-size: 32px;
+        }
+        @media screen and (max-width: ($narrow-width - (195px))) {
+          font-size: 30px;
+        }
+        @media screen and (max-width: ($narrow-width - (225px))) {
+          font-size: 29px;
+        }
+        @media screen and (max-width: ($narrow-width - (240px))) {
+          font-size: 28px;
         }
       }
     }
-    // .item:nth-child(20){
-    //   background-color: maroon;
-    // }
     .item.active{
       scroll-snap-align: center;
       .number{

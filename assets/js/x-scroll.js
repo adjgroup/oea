@@ -46,4 +46,5 @@ function resizeWindow(){
 
 window.onload = ()=>{
     init();
+    initMoblieNav();
 }
