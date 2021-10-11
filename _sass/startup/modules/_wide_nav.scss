@@ -17,6 +17,10 @@
         left: $wide-left;
         top: $wide-top * 3;
         flex-direction: column;
-        height: 100px;
+        height: 130px;
     }
+    @media screen and (max-width: $middle-width) {
+        display: none;
+    }
+    
 }

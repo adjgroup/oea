@@ -1,0 +1,17 @@
+.narrow-nav-icon{
+    position: fixed;
+    background-color: $point-color;
+    bottom: $narrow-bottom;
+    right: $narrow-right;
+    width: 90px;
+    height: 90px;
+    font-family: $header-font;
+    font-size: 30px;
+    border-radius: 45px;
+    z-index: 55;
+    color: $light-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 4px 4px 4px rgba(0,0,0, 0.1);
+}

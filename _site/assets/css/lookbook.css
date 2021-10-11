@@ -9,19 +9,23 @@
 
 /* wide: computer mode  */
 /* 화면 변환 기준 */
-.center_section { position: relative; display: flex; justify-content: center; align-items: center; height: 100vh; }
+.center_section { position: relative; display: flex; justify-content: center; align-items: center; height: 100vh; overflow-x: visible; }
 
 .center_section hr { position: absolute; color: #00FFA2; border: solid 1px; width: 153px; scroll-snap-align: center; margin-bottom: 5vh; }
+
+@media screen and (max-width: 900px) { .center_section hr { display: none; } }
 
 .center_section hr.left_line { left: -175px; z-index: 50; }
 
 .center_section hr.right_line { right: -175px; z-index: 50; }
 
-.center_section .main_images { position: absolute; background-color: maroon; width: 100%; display: flex; justify-content: center; align-items: center; z-index: 20; margin-bottom: 30px; }
+.center_section .main_images { position: absolute; width: 100%; display: flex; justify-content: center; align-items: center; z-index: 20; margin-bottom: 30px; }
 
 .center_section .main_images div { width: 100%; display: flex; justify-content: center; align-items: center; }
 
 .center_section .main_images img { width: 120%; }
+
+@media screen and (max-width: 900px) { .center_section .main_images img { width: 130%; } }
 
 .lookbook_contents::-webkit-scrollbar { display: none; }
 
@@ -34,6 +38,8 @@
 .lookbook_contents .item_list .item { width: 100%; display: flex; color: #FFFFFF; font-family: mont-heavy; margin: 5px 0px; }
 
 .lookbook_contents .item_list .item .number { z-index: 19; padding: 6px 6px 0px 0px; font-size: 10px; }
+
+@media screen and (max-width: 900px) { .lookbook_contents .item_list .item .number { padding-top: 3px; } }
 
 .lookbook_contents .item_list .item .name { z-index: 19; font-size: 70px; }
 
@@ -50,6 +56,20 @@
 @media screen and (max-width: 1440px) { .lookbook_contents .item_list .item .name { font-size: 51px; } }
 
 @media screen and (max-width: 1400px) { .lookbook_contents .item_list .item .name { font-size: 48px; } }
+
+@media screen and (max-width: 900px) { .lookbook_contents .item_list .item .name { font-size: 52px; } }
+
+@media screen and (max-width: 750px) { .lookbook_contents .item_list .item .name { font-size: 48px; } }
+
+@media screen and (max-width: 700px) { .lookbook_contents .item_list .item .name { font-size: 41px; } }
+
+@media screen and (max-width: 675px) { .lookbook_contents .item_list .item .name { font-size: 3.5vmax; } }
+
+@media screen and (max-width: 575px) { .lookbook_contents .item_list .item .name { font-size: 3.2vmax; } }
+
+@media screen and (max-width: 540px) { .lookbook_contents .item_list .item .name { font-size: 3.0vmax; } }
+
+@media screen and (max-width: 510px) { .lookbook_contents .item_list .item .name { font-size: 2.7vmax; } }
 
 .lookbook_contents .item_list .item.active { scroll-snap-align: center; }
 

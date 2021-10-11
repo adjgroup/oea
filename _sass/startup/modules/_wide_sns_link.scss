@@ -11,6 +11,9 @@
     }
     @media screen and (max-width: $wide-width) {
         left: $wide-left;
-        bottom: $wide-bottom * 3;
+        bottom: $wide-bottom * 2;
+    }
+    @media screen and (max-width: $middle-width) {
+        display: none;
     }
 }
