@@ -126,12 +126,13 @@ table {
   border-spacing: 0;
 }
 body {
-    position: relative;
+    position: fixed;
     background-color: $background-color;
     color: $dark-color;
     overflow: hidden;
+    touch-action:none; 
+    width: 100vw;
 }
-
 a{
   text-decoration: none;
   color: inherit;  

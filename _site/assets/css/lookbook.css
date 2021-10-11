@@ -49,6 +49,8 @@
 
 @media screen and (max-width: 1440px) { .lookbook_contents .item_list .item .name { font-size: 51px; } }
 
+@media screen and (max-width: 1400px) { .lookbook_contents .item_list .item .name { font-size: 48px; } }
+
 .lookbook_contents .item_list .item.active { scroll-snap-align: center; }
 
 .lookbook_contents .item_list .item.active .number { z-index: 21; }
