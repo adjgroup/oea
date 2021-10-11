@@ -129,8 +129,14 @@ body {
     position: relative;
     background-color: $background-color;
     color: $dark-color;
+    overflow: hidden;
 }
+
 a{
   text-decoration: none;
   color: inherit;  
+}
+
+body::-webkit-scrollbar{
+  display: none;
 }

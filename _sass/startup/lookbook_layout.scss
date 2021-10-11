@@ -77,19 +77,25 @@
       .name{
         z-index:19;
         font-size: 70px;
-      }
-      
-      @media screen and (max-width: 1900px) {
-        .name{
+        @media screen and (max-width: 1900px) {
           font-size: 65px;
-        };
-      }
-      @media screen and (max-width: 1750px){
-        .name{
+        }
+        @media screen and (max-width: 1750px) {
           font-size: 60px;
-        };
-      }
-      
+        }
+        @media screen and (max-width: 1620px) {
+          font-size: 58px;
+        }
+        @media screen and (max-width: 1570px) {
+          font-size: 55px;
+        }
+        @media screen and (max-width: 1490px) {
+          font-size: 53px;
+        }
+        @media screen and (max-width: 1440px) {
+          font-size: 51px;
+        }
+      }      
     }
     .item.active{
       scroll-snap-align: center;

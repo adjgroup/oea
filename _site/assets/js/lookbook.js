@@ -292,7 +292,6 @@ function init(){
 
     // // Pad 또는 Moblie 스크롤 시작 
     window.addEventListener("touchstart",(event)=>{
-        // console.log("touchstart")
         startY = event.touches[0].clientY;
     });
     

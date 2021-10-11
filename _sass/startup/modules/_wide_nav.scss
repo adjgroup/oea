@@ -2,13 +2,21 @@
     color: $base-color;
     font-family: $header-font;
     font-size: 15px;
-    position: absolute;
+    position: fixed;
     top: $wide-top;
     right: $wide-right;
     display: flex;
     justify-content: space-between;
-    width: 70%;
+    width: 350px;
+    z-index: 55;
     .icon.selected{
         color: $point-color;
+    }
+
+    @media screen and (max-width: $wide-width) {
+        left: $wide-left;
+        top: $wide-top * 3;
+        flex-direction: column;
+        height: 100px;
     }
 }

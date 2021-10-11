@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face { font-family: 'mont-heavy'; src: url("/assets/font/Mont-HeavyDEMO.otf") format("opentype"); }
 
 @font-face { font-family: 'mont-light'; src: url("/assets/font/Mont-ExtraLightDEMO.otf") format("opentype"); }
@@ -7,6 +8,7 @@
 @font-face { font-family: 'noto-sans-cjk-kr'; src: url("/assets/font/NotoSansCJKkr-Bold.otf"); }
 
 /* wide: computer mode  */
+/* 화면 변환 기준 */
 .center_section { position: relative; display: flex; justify-content: center; align-items: center; height: 100vh; }
 
 .center_section hr { position: absolute; color: #00FFA2; border: solid 1px; width: 153px; scroll-snap-align: center; margin-bottom: 5vh; }
@@ -38,6 +40,14 @@
 @media screen and (max-width: 1900px) { .lookbook_contents .item_list .item .name { font-size: 65px; } }
 
 @media screen and (max-width: 1750px) { .lookbook_contents .item_list .item .name { font-size: 60px; } }
+
+@media screen and (max-width: 1620px) { .lookbook_contents .item_list .item .name { font-size: 58px; } }
+
+@media screen and (max-width: 1570px) { .lookbook_contents .item_list .item .name { font-size: 55px; } }
+
+@media screen and (max-width: 1490px) { .lookbook_contents .item_list .item .name { font-size: 53px; } }
+
+@media screen and (max-width: 1440px) { .lookbook_contents .item_list .item .name { font-size: 51px; } }
 
 .lookbook_contents .item_list .item.active { scroll-snap-align: center; }
 
