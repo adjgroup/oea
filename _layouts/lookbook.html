@@ -27,7 +27,7 @@ layout: default
 <script>
     let itemList = [];
     {% for item in site.data.items %}
-        itemList.push({number:"{{ item.number }}", name: "{{ item.name }}", img: "{{ item.img }}"});
+        itemList.push({number:"{{ item.number }}", name: "{{ item.name }}", img: "{{ item.img }}", link: "{{ item.link }}"});
     {% endfor %}
 </script>
 

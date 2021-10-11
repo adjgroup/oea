@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face { font-family: 'mont-heavy'; src: url("/assets/font/Mont-HeavyDEMO.otf") format("opentype"); }
 
 @font-face { font-family: 'mont-light'; src: url("/assets/font/Mont-ExtraLightDEMO.otf") format("opentype"); }
@@ -7,6 +8,7 @@
 @font-face { font-family: 'noto-sans-cjk-kr'; src: url("/assets/font/NotoSansCJKkr-Bold.otf"); }
 
 /* wide: computer mode  */
+/* 화면 변환 기준 */
 @keyframes round { from { transform: none; }
   to { transform: rotate(1turn); } }
 

@@ -13,6 +13,7 @@ body.default{
 
   .left_section{
     width: 33%;
+    min-width: 350px;
     background-image: url('/assets/images/background_side_y_l.png');
     background-size: cover;
     background-position: right;
@@ -21,12 +22,11 @@ body.default{
   }
   .center_section{
     width: 34% ;
-    min-width: 560px;
+    min-width: 460px;
     min-height: 100vh;
   }
   .right_section{
     width: 33%;
-    min-width: 440px;
     background-image: url('/assets/images/background_side_y_r.png');
     background-size: cover;
     position: relative;

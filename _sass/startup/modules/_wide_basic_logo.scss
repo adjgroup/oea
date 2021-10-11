@@ -2,7 +2,8 @@
     color: $point-color;
     font-size: 50px;
     font-family: $header-font;
-    position: absolute;
-    top: $wide-top; 
+    position: fixed;
+    top: $wide-top - 13px;
     left: $wide-left;
+    z-index: 55;
 }

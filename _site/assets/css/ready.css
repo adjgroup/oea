@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face { font-family: 'mont-heavy'; src: url("/assets/font/Mont-HeavyDEMO.otf") format("opentype"); }
 
 @font-face { font-family: 'mont-light'; src: url("/assets/font/Mont-ExtraLightDEMO.otf") format("opentype"); }
@@ -7,6 +8,7 @@
 @font-face { font-family: 'noto-sans-cjk-kr'; src: url("/assets/font/NotoSansCJKkr-Bold.otf"); }
 
 /* wide: computer mode  */
+/* 화면 변환 기준 */
 * { box-sizing: border-box; }
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
@@ -24,9 +26,11 @@ blockquote:before, blockquote:after, q:before, q:after { content: ''; content: n
 
 table { border-collapse: collapse; border-spacing: 0; }
 
-body { position: relative; background-color: #E5E5E5; color: #0000004D; }
+body { position: relative; background-color: #E5E5E5; color: #0000004D; overflow: hidden; }
 
 a { text-decoration: none; color: inherit; }
+
+body::-webkit-scrollbar { display: none; }
 
 @keyframes round { from { transform: none; }
   to { transform: rotate(1turn); } }
